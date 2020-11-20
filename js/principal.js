@@ -1,15 +1,15 @@
 $(function() {
 
-    var celulares = [
-        'LG', 'Motorola', 'Xiaomi', 'Samsung'
+    var computadores = [
+        'Asus', 'Lenovo', 'thoshiba', 'HP'
     ]
 
 
 
-    for (let i = 0; i < celulares.length; i++) {
-        const cell = celulares[i];
+    for (let i = 0; i < computadores.length; i++) {
+        const cell = computadores[i];
         console.log(cell);
-        $('#lista-celulares').append(`
+        $('#lista-computadores').append(`
             <li>
                 <span class="row">
 
@@ -43,7 +43,7 @@ $(function() {
 
     });
 
-    $('#lista-celulares').on('click', '.btn-eliminar', function() {
+    $('#lista-computadores').on('click', '.btn-eliminar', function() {
         $('#dialogEliminar').dialog('open')
     })
 
